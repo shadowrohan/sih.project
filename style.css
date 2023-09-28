@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(201, 200, 216);
+}
+
+.container {
+    width: 96%;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 3fr repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 25px;
+}
+
+.box {
+    background-color: #756bcf;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.presciption {
+    grid-area: 1 /1 /1/6;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(147, 139, 220, 1) 58%, #776dd0 100%);
+}
+
+.recent_case {
+    grid-area: 2 /1/3/2;
+}
+
+.nearby_doctor {
+    grid-area: 2/2/4/4;
+}
+
+.chatbot {
+    grid-area: 2/4 /4/6;
+    transition-duration: grid-area 1s ease;
+}
+
+.chatbot:hover {
+    grid-area: 1 /3/4/6;
+}
+
+.health_tools {
+    grid-area: 3 /1/4/2;
+}
