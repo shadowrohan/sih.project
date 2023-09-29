@@ -7,18 +7,46 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+<body>
 <div class="flex">
     <div class="container">
         <div class="presciption box"></div>
         <div class="recent_case box"></div>
         <div class="nearby_doctor box"></div>
-        <div class="chatbot box"></div>
+        <div id="chat-box" class="chatbot box">
+            <button id="kiss-me">max</button>
+            <button id="ditch-me">min</button>
+        </div>
         <div class="health_tools box"></div>
     </div>
 </div>
 
+<script>
+    const btn = document.getElementById("kiss-me")
+    console.log(btn);
+    btn.addEventListener("click", Myfunction)
 
-<body>
+    function Myfunction() {
+        const chtbox = document.getElementById("chat-box")
+        chtbox.style.gridArea = "1/3/4/6"
+    }
+    const btn2 = document.getElementById("ditch-me")
+    console.log(btn2);
+    btn2.addEventListener("click", myfunction2)
+    function myfunction2(){
+        const chtbox = document.getElementById("chat-box")
+        chtbox.style.gridArea=" 2/4/4/6";
+
+    }
+    function getE(e) {
+        console.log(e.target)
+    }
+    window.addEventListener("click", getE)
+    
+
+
+
+</script>
 
 </body>
 
