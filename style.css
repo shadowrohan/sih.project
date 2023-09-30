@@ -48,12 +48,13 @@
     flex-direction: column;
 }
 .bot-img{
-    /* pointer-events: none; */
-    margin-top:30%;
-    margin-left:10% ;
+    pointer-events: none;
+    position:absolute;
+    bottom: 15%;
+    right: 0%;
     width: 100%;
-    object-fit: contain;
-    height: 45%;
+    object-fit:contain;
+    
 
 }
 .btn{
